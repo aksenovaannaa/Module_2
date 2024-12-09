@@ -14,4 +14,4 @@ def get_numbers():
 win = get_numbers()
 
 
-print(win, '-', numbers)
+print(win, '-', ''.join(map(str, numbers)))
