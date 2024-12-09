@@ -6,7 +6,7 @@ def get_numbers():
     win = random.choice(n)
     for i in range(1, win + 1):
         for j in range(i + 1,win + 1):
-            if (i + j) % win == 0:
+            if win % (i + j) == 0:
                 numbers.append(i)
                 numbers.append(j)
     return win
